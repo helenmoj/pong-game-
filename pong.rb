@@ -71,12 +71,22 @@ class GamePong < Gosu::Window # each time you write a game start by creating a s
          @state = :in_play
        end
      end
-   end
+     end
 
     def draw
-      
+      @background_image.draw(0, 0, 0)
+      if @state == :ended
+        @score_board.draw_win(@winner)
+      end
+      @score_board.draw(@players)
+      @player_1.draw
+      @player_2.draw
+      @ball.draw
     end
+
+    def load_sounds
   end
-end
+  end
+  end
 
 GamePong.new.show

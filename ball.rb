@@ -21,11 +21,15 @@ class Ball
 
   def draw
     @window.draw_quad(
-        @x -4, @y -4, color::WHITE,
-        @x -4, @y +4, color::WHITE,
-        @x +4, @y -4, color::WHITE,
-        @x +4, @y +4, color::WHITE,
-    )
+        #@x -4, @y -4, color::WHITE,
+        @x -4, @y -4, Gosu::Color::WHITE,
+        #@x -4, @y +4, color::WHITE,
+        @x -4, @y +4, Gosu::Color::WHITE,
+        #@x +4, @y -4, color::WHITE,
+        @x +4, @y -4, Gosu::Color::WHITE,
+      #  @x +4, @y +4, color::WHITE,
+        @x +4, @y +4, Gosu::Color::WHITE,
+        )
 
   end
 

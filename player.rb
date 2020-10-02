@@ -44,10 +44,14 @@ class Player
 
   def draw
     @window.draw_quad(
-               @x - WIDTH/2, @y - HEIGHT/2, color::WHITE,
-               @x + WIDTH/2, @y - HEIGHT/2, color::WHITE,
-               @x + WIDTH/2, @y + HEIGHT/2, color::WHITE,
-               @x - WIDTH/2, @y + HEIGHT/2, color::WHITE,
+               #@x - WIDTH/2, @y - HEIGHT/2, color::WHITE,
+               @x - WIDTH/2, @y - HEIGHT/2, Gosu::Color::WHITE,
+               #@x + WIDTH/2, @y - HEIGHT/2, color::WHITE,
+               @x + WIDTH/2, @y - HEIGHT/2, Gosu::Color::WHITE,
+              # @x + WIDTH/2, @y + HEIGHT/2, color::WHITE,
+               @x + WIDTH/2, @y + HEIGHT/2, Gosu::Color::WHITE,
+              # @x - WIDTH/2, @y + HEIGHT/2, color::WHITE,
+               @x - WIDTH/2, @y + HEIGHT/2, Gosu::Color::WHITE,
                )
   end
 end
